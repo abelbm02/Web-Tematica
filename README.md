@@ -1,4 +1,4 @@
-# 🚗 Proyecto Web: Página Temática de *Cars* 
+# 🚗💨 Proyecto Web: Página Temática de *Cars* 
 
 Este proyecto es una página web temática inspirada en la película *Cars*, desarrollada por **Mariano Verdugo González** y **Abel Blanco Muñoz**. Hemos utilizado **HTML**, **CSS**, **JavaScript** y **Bootstrap** para crear una experiencia interactiva, colorida y dinámica.
 
