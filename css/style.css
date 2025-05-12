@@ -1,8 +1,16 @@
-body{
-
+header {
+  background-color: #c30022;
+  color: gray;
 }
 
-.navbarNav{
-    background-color: #c30022;
-    padding: 10px;
+.imagen-coche {
+  width: 120px;
+  height: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+.nav-link:hover {
+  color: #c30022;
 }
