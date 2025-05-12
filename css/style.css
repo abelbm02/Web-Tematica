@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body{
 font-family: monospace;
 margin: 0;
@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 50px;
-    background-color: #bd1717a2;
+    background-color: #c30022;
     flex-wrap: wrap;
     
 }
@@ -44,6 +44,7 @@ header {
     position: relative;
     z-index: 2;
     padding-top: 20vh;
+    margin-top: 250px;
   }
   
   
@@ -59,30 +60,11 @@ header {
     align-items: center; 
     margin: 0 auto; 
     padding: 0 20px; 
-    background-color: #bd1717a2 ;
-}
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: #c30022 ;
+    height: 120px;
 }
 
-header {
-  background-color: #c30022;
-  color: gray;
-}
 
-.imagen-coche {
-  width: 120px;
-  height: auto;
-}
 
-.nav-link {
-  color: #ffffff;
-}
 
-.nav-link:hover {
-  color: #c30022;
-}
->>>>>>> 6df194b4732cd9af58f3575796652c4a6b6b066b
+
