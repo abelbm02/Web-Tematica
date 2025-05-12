@@ -1,13 +1,15 @@
 # 🌟 Proyecto Web: Página Temática de *Cars* 🚗
 
-Este proyecto es una página web temática inspirada en la película *Cars*, desarrollada en pareja como parte de una actividad académica. Utilizamos **HTML**, **CSS**, **JavaScript** y **Bootstrap** para crear una experiencia interactiva, colorida y dinámica.
+Este proyecto es una página web temática inspirada en la película *Cars*, desarrollada por **Mariano Verdugo González** y **Abel Blanco Muñoz**. Hemos utilizado **HTML**, **CSS**, **JavaScript** y **Bootstrap** para crear una experiencia interactiva, colorida y dinámica.
+
+La web presenta una estructura organizada en secciones, incluyendo una galería de personajes, información sobre la película, efectos visuales y elementos interactivos que enriquecen la navegación del usuario.
 
 ## 🛠️ Tecnologías utilizadas
 
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap 5  
+- Bootstrap  
 - Git y GitHub  
 
 ## 🎯 Objetivo
