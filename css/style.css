@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 font-family: monospace;
 margin: 0;
@@ -60,3 +61,28 @@ header {
     padding: 0 20px; 
     background-color: #bd1717a2 ;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+  background-color: #c30022;
+  color: gray;
+}
+
+.imagen-coche {
+  width: 120px;
+  height: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #c30022;
+}
+>>>>>>> 6df194b4732cd9af58f3575796652c4a6b6b066b
