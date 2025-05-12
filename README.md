@@ -6,11 +6,11 @@ La web presenta una estructura organizada en secciones, incluyendo una galería 
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Bootstrap  
-- Git y GitHub  
+- 🧱 HTML5  
+- 🎨 CSS3  
+- ⚙️ JavaScript  
+- 🧩 Bootstrap  
+- 🗂️ Git y 🌐 GitHub   
 
 ## 🎯 Objetivo
 
