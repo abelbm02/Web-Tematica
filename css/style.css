@@ -14,6 +14,46 @@ header {
     flex-wrap: wrap;
     
 }
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dc3545; 
+  padding-top: 60px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1050;
+}
+.sidebar.show {
+  transform: translateX(0);
+}
+.sidebar a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1060;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
 
 .imagen{
     width: 170px;
@@ -57,10 +97,7 @@ header {
   
   
 
-.navegar{
-    display: flex;
-    gap: 15px;
-}
+
 
 .footer-content {
     justify-content: space-between; 
