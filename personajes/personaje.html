@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personajes Cars</title>
+  <link rel="stylesheet" href="../css/style_personajes.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Magneto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <header class="text-white">
+    <div class="container py-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <img src="../img/Pixar_Cars_Logo.webp" class="logo img-fluid imagen mx-auto">
+    
+        
+        <button class="toggle-btn" id="toggleSidebar">☰</button>
+            <div class="sidebar bg-danger" id="sidebarMenu">
+                <a href="../index.html">Inicio</a>
+                <a href="../personajes/personaje.html">Personajes</a>
+                <a href="#">Películas</a>
+                <a href="#">Juegos</a>
+                <a href="#">Contacto</a>
+            </div>    
+    </div>
+
+</header>
+
+<main>
+
+    <section class="position-relative">
+        <di class="">Rayo Mcqueen</div>
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+        <p>&copy; 2025 Mariano Verdugo y Abel Blanco.</p>
+    </div>
+
+</footer>
+
+<script>
+  document.getElementById("toggleSidebar").addEventListener("click", function () {
+    const sidebar = document.getElementById("sidebarMenu");
+    sidebar.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>
