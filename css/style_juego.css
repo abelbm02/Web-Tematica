@@ -1,5 +1,3 @@
-
-
 body{
     font-family: monospace;
     cursor: url("../img/cochesito.png") 16 16 , auto;
@@ -96,9 +94,6 @@ body{
         margin-top: 150px;
       }
       
-      
-    
-    
     
     .footer-content {
         justify-content: space-between; 
