@@ -4,7 +4,6 @@ font-family: monospace;
 margin: 0;
 height: 100%;
 cursor: url("../img/fa7c8c594e4912dfe327c08f45fbc5df.png") 16 16 , auto;
-color: #C0C0C0; 
 }
 
 header {
@@ -20,7 +19,7 @@ header {
 
 h2{
     font-family: 'Magneto', sans-serif;
-    color: #C0C0C0; 
+    color: black; 
 }
 
 .sidebar {
