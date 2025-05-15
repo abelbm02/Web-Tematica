@@ -1,0 +1,131 @@
+
+body{
+font-family: monospace;
+margin: 0;
+height: 100%;
+cursor: url("../img/fa7c8c594e4912dfe327c08f45fbc5df.png") 16 16 , auto;
+color: #C0C0C0; 
+}
+
+header {
+    font-family: 'Magneto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #c30022;
+    flex-wrap: wrap;
+    
+}
+
+h2{
+    font-family: 'Magneto', sans-serif;
+    color: #C0C0C0; 
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dc3545; 
+  padding-top: 60px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1050;
+}
+.sidebar.show {
+  transform: translateX(0);
+}
+.sidebar a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1060;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+.imagen{
+    width: 150px;
+    height: 120px;
+    
+}
+
+.video-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* pantalla completa */
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+  }
+  
+  .video-content {
+    background-color: rgba(255, 255, 255, 0.388);
+    position: relative;
+    z-index: 2;
+    padding-top: 130px;
+    padding-bottom: 20vh;
+    border-radius: 15px;
+    width: 700px;
+    height: 500px;
+    max-width: 90%;  
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  
+
+
+
+.footer-content {
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
+    background-color: #c30022 ;
+    height: 120px;
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+  font-family: 'Magneto';
+  src: url('../fuentes/Magneto-Bold.woff2') format('woff2'),
+       url('../fuentes/Magneto-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
