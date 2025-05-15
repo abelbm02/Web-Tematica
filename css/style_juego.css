@@ -41,7 +41,7 @@ body{
       top: 20px;
       right: 20px;
       z-index: 1060;
-      background-color: #dc3545;
+      background-color: #c30022;
       border: none;
       color: white;
       font-size: 30px;
@@ -56,9 +56,14 @@ body{
     .imagen{
         width: 150px;
         height: 120px;
-        
     }
     
+    .imagen-nav{
+        width: 190px;
+        height: 120px;
+        margin-right: 20px;
+    }
+
     .video-background-container {
         position: relative;
         width: 100%;
