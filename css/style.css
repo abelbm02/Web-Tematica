@@ -90,7 +90,7 @@ header {
   }
   
   .video-content {
-    background-color: rgba(255, 255, 255, 0.388);
+    background-color: rgba(0, 0, 0, 0.53);
     position: relative;
     z-index: 2;
     padding-top: 130px;
@@ -102,6 +102,7 @@ header {
     margin: 0 auto;
     text-align: center;
     margin-top: 150px;
+    color: white;
   }
   
 .footer-content {
