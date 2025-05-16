@@ -133,7 +133,8 @@ body{
       }
 
       #options button:hover {
-        background-color: #2980b9; /* Hover del botón */
+        background-color: rgb(160, 16, 16); /* Hover del botón */
+        color: orange; /* Texto del botón */
       }
 
       #result-box {
