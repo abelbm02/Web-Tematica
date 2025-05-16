@@ -113,10 +113,33 @@ body{
         color: black;
       }
 
-      #options{
-        background-color: #c30022;
+      #quiz-container {
+        color: black;           /* Color del texto */
+        padding: 30px;
+        border-radius: 15px;
       }
 
-      #question{
-        color: black;
+      #question {
+        color: black; /* Color de la pregunta */
       }
+
+      #options button {
+        background-color: #ff0000; /* Fondo de los botones */
+        color: white;              /* Texto de los botones */
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      #options button:hover {
+        background-color: #2980b9; /* Hover del botón */
+      }
+
+      #result-box {
+        background-color: #dff9fb;
+        color: #130f40;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
