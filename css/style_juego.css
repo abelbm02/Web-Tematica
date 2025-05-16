@@ -138,9 +138,23 @@ body{
       }
 
       #result-box {
-        background-color: #dff9fb;
-        color: #130f40;
+        background-color: #dff9fb00;
+        color: black;
         padding: 20px;
         border-radius: 10px;
       }
+
+      #reinicio {
+        background-color: red; /* Rojo brillante estilo Cars */
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      #reinicio:hover {
+        background-color: rgb(160, 16, 16); /* Hover del botón */
+        color: orange; /* Texto del botón */      }
 
