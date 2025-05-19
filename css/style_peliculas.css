@@ -90,26 +90,28 @@ header {
     margin-bottom:50px;
 }
 
-.cars1 {
-  background-image: url("../img/cars1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.cars2 {
-  background-image: url("../img/cars2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.cars3 {
-  background-image: url("/img/cars3.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .titu{
     color: rgb(194, 186, 186);
     text-align: center;
     margin-top: 20px;
+}
+
+.zebra-light {
+  background-color: #f8f9fa; /* claro */
+}
+
+.zebra-dark {
+  background-color: #e9ecef; /* un poco más oscuro */
+}
+
+.cars1 {
+  
+}
+
+.cars2 {
+
+}
+
+.cars3 {
+
 }
