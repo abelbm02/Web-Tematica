@@ -81,5 +81,26 @@ header {
     color: white;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.cars1 {
+  background-image: url("../img/cars1.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px); /* Solo visible si hay transparencia */
+}
+
+.cars2 {
+  background-image: url("../img/cars2.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px); /* Solo visible si hay transparencia */
+}
 
