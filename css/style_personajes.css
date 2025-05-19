@@ -27,6 +27,8 @@ header {
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1050;
+  overflow-y: auto;     
+  -webkit-overflow-scrolling: touch;
 }
 .sidebar.show {
   transform: translateX(0);
@@ -70,26 +72,6 @@ header {
 }
 
 
-  
-  
-  
-  
-  
-
-
-
-.footer-content {
-    justify-content: space-between; 
-    align-items: center; 
-    margin: 0 auto; 
-    padding: 40px 20px; 
-    background-color: #c30022 ;
-    height: 120px;
-    text-align: center;
-    color: white;
-}
-
-
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);
@@ -122,8 +104,15 @@ header {
   text-align: end;
 }
 
-
-
-
+.footer-content {
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
+    background-color: #c30022 ;
+    height: 120px;
+    text-align: center;
+    color: white;
+}
 
 
