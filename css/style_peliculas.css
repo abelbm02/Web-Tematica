@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Magneto';
+  src: url('/fuentes/Magneto-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 body{
 font-family: monospace;
@@ -86,21 +93,31 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 
 .cars1 {
   background-image: url("../img/cars1.jpg");
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(8px); /* Solo visible si hay transparencia */
 }
 
 .cars2 {
   background-image: url("../img/cars2.jpg");
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(8px); /* Solo visible si hay transparencia */
 }
 
+.cars3 {
+  background-image: url("/img/cars3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.titu{
+  font-family: 'Magneto', sans-serif;
+    color: rgb(194, 186, 186);
+    text-align: center;
+    margin-top: 20px;
+}
