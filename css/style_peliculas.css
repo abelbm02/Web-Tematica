@@ -95,18 +95,12 @@ header {
     margin-bottom:50px;
 }
 
-.titu{
-    color: rgb(194, 186, 186);
-    text-align: center;
-    margin-top: 20px;
-}
-
 .zebra-light {
-  background-color: #f8f9fa; /* claro */
+  background-color: #f8f9fa; 
 }
 
 .zebra-dark {
-  background-color: #e9ecef; /* un poco más oscuro */
+  background-color: grey; 
 }
 
 .hover-elevate {
@@ -142,3 +136,38 @@ header {
   position: relative;
   z-index: 1;
 }
+
+.bg-soft-grey{
+    background-color: #dfdada;
+}
+
+.titu {
+  color: #dc3545;          
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;   
+}
+
+#cars1{
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0; /* evita que se encoja */
+}
+
+#cars2{
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0; /* evita que se encoja */
+}
+
+
+#cars3 {
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0; /* evita que se encoja */
+}
+
