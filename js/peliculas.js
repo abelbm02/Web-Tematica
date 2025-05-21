@@ -18,5 +18,32 @@ function setupSidebarToggle() {
     });
   }
 
- 
   document.addEventListener('DOMContentLoaded', setupSidebarToggle);
+
+
+document.querySelectorAll('.hover-elevate').forEach(div => {
+  div.addEventListener('mouseenter', () => {
+    div.classList.add('hovered');
+  });
+  div.addEventListener('mouseleave', () => {
+    div.classList.remove('hovered');
+  });
+});
+
+document.querySelectorAll('.hover-elevate').forEach(div => {
+  // Animación al pasar el cursor
+  div.addEventListener('mouseenter', () => {
+    div.classList.add('hovered');
+  });
+  div.addEventListener('mouseleave', () => {
+    div.classList.remove('hovered');
+  });
+
+  // Abrir enlace en nueva pestaña al hacer clic
+  div.addEventListener('click', () => {
+    const url = div.getAttribute('data-url');
+    if (url) {
+      window.open(url, '_blank');
+    }
+  });
+});

@@ -109,14 +109,11 @@ header {
   background-color: #e9ecef; /* un poco más oscuro */
 }
 
-.cars1 {
-  
+.hover-elevate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-
-.cars2 {
-
-}
-
-.cars3 {
-
+.hover-elevate.hovered {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
