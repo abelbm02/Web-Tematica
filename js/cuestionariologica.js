@@ -83,7 +83,7 @@ const quizData = [
 
   function createFallingCar() {
     const car = document.createElement("img");
-    car.src = "../img/cochesito.png"; // ✅ pon aquí la ruta correcta de tu imagen
+    car.src = "../img/cochesito.png"; 
     car.classList.add("car");
   
     // Posición horizontal aleatoria
