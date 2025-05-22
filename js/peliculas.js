@@ -1,37 +1,27 @@
-"use strict"
+"use strict";
 
 document.getElementById("toggleSidebar").addEventListener("click", function () {
-    const sidebar = document.getElementById("sidebarMenu");
-    sidebar.classList.toggle("show");
-  });
-
-function setupSidebarToggle() {
-    const toggleButton = document.getElementById('toggleSidebar');
-    const audio = document.getElementById('mcqueenaudio');
-    const sidebar = document.getElementById('sidebar');
-
-    toggleButton.addEventListener('click', () => {
-      audio.currentTime = 0;
-      audio.play();
-
-      sidebar.classList.toggle('visible');
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', setupSidebarToggle);
-
-
-document.querySelectorAll('.hover-elevate').forEach(div => {
-  div.addEventListener('mouseenter', () => {
-    div.classList.add('hovered');
-  });
-  div.addEventListener('mouseleave', () => {
-    div.classList.remove('hovered');
-  });
+  const sidebar = document.getElementById("sidebarMenu");
+  sidebar.classList.toggle("show");
 });
 
+function setupSidebarToggle() {
+  const toggleButton = document.getElementById('toggleSidebar');
+  const audio = document.getElementById('mcqueenaudio');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleButton.addEventListener('click', () => {
+    audio.currentTime = 0;
+    audio.play();
+
+    sidebar.classList.toggle('visible');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setupSidebarToggle);
+
+// Hover efecto
 document.querySelectorAll('.hover-elevate').forEach(div => {
-  // Animación al pasar el cursor
   div.addEventListener('mouseenter', () => {
     div.classList.add('hovered');
   });
@@ -46,10 +36,19 @@ document.querySelectorAll('.hover-elevate').forEach(div => {
       window.open(url, '_blank');
     }
   });
+});
 
-  document.querySelectorAll('.curiosity-btn').forEach((btn) => {
+// Curiosidades con sonido
+document.querySelectorAll('.curiosity-btn').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
+
+    // Reproducir sonido
+    const curiosityAudio = document.getElementById('curiositySound');
+    if (curiosityAudio) {
+      curiosityAudio.currentTime = 0;
+      curiosityAudio.play();
+    }
 
     const parent = btn.closest('.trailer-box');
     const url = parent.dataset.url;
@@ -70,22 +69,17 @@ document.querySelectorAll('.hover-elevate').forEach(div => {
         datoCurioso = 'No hay datos curiosos disponibles.';
     }
 
-    // Busca si ya existe un dato curioso y lo elimina para que no se duplique
     const existing = parent.querySelector('.curiosity-text');
     if (existing) {
       existing.remove();
       if (existing.textContent === datoCurioso) {
-        // Si ya estaba mostrando este dato, solo lo quita y no lo vuelve a mostrar
         return;
       }
     }
 
-    // Crear el contenedor del texto
     const div = document.createElement('div');
     div.className = 'curiosity-text';
     div.textContent = datoCurioso;
     parent.appendChild(div);
   });
-});
-
 });
