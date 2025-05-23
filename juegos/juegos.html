@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Configuración del documento -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cars - Tu Mundo Sobre Ruedas</title>
-  <link rel="stylesheet" href="../css/style_juego.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="icon" href="../img/cochesito.png" type="image/x-icon">
 
+  <!-- Título de la pestaña del navegador -->
+  <title>Cars - Tu Mundo Sobre Ruedas</title>
+
+  <!-- Estilos personalizados para la página de juegos -->
+  <link rel="stylesheet" href="../css/style_juego.css">
+
+  <!-- Bootstrap para estilos y diseño responsive -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Ícono que aparece en la pestaña del navegador -->
+  <link rel="icon" href="../img/cochesito.png" type="image/x-icon">
 </head>
+
+<!-- Cuerpo de la página con flexbox para asegurar footer al fondo -->
 <body class="d-flex flex-column min-vh-100">
 
- <header class="text-white">
+  <!-- Encabezado principal con logo, botón menú y sidebar -->
+  <header class="text-white">
     <div class="container py-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <img src="../img/Pixar_Cars_Logo.webp" class="logo img-fluid imagen mx-auto">
-    
+
+      <!-- Logo principal de Cars -->
+      <img src="../img/Pixar_Cars_Logo.webp" class="logo img-fluid imagen mx-auto">
+      
+      <!-- Botón que muestra/oculta el menú lateral -->
+      <button class="toggle-btn" id="toggleSidebar">☰</button>
         
-        <button class="toggle-btn" id="toggleSidebar">☰</button>
-          
-          
-          <div class="sidebar bg-danger" id="sidebarMenu">
+      <!-- Menú lateral con enlaces de navegación -->
+      <div class="sidebar bg-danger" id="sidebarMenu">
+        <!-- Imagen decorativa del personaje Mate -->
+        <img class="imagen-nav" src="../img/Mate.webp" alt="">
 
-          <img class="imagen-nav" src="../img/Mate.webp" alt="">
-
-            <a href="../index.html">Inicio</a>
-            <a href="../personajes/personaje.html">Personajes</a>
-            <a href="../peliculas/peliculas.html">Películas</a>
-            <a href="../juegos/juegos.html">Juegos</a>
-            <a href="../contacto/contacto.html">Contacto</a>
-          </div>
-          <audio id="mcqueenaudio" src="../audio/rayo-laser-101851.mp3"></audio>
-    </div>
-</header>
-
-<main class="flex-grow-1 py-5">
-    <div class="container my-5" id="quiz-container">
-        <h2 class="titulo text-center mb-4">¿Cuánto sabes de Cars?</h2>
-  
-        <div id="question-box">
-          <p id="question" class="fs-5"></p>
-          <div id="options" class="d-grid gap-2"></div>
-        </div>
-  
-        <div id="result-box" class="mt-4 d-none text-center">
-          <h3>¡Has completado el quiz!</h3>
-          <p id="score" class="fs-4"></p>
-          <button onclick="restartQuiz()" class="reinicio btn mt-3 bg-danger">Reintentar</button>
-        </div>
+        <!-- Enlaces de navegación a otras secciones del sitio -->
+        <a href="../index.html">Inicio</a>
+        <a href="../personajes/personaje.html">Personajes</a>
+        <a href="../peliculas/peliculas.html">Películas</a>
+        <a href="../juegos/juegos.html">Juegos</a>
+        <a href="../contacto/contacto.html">Contacto</a>
       </div>
 
-</main>
+      <!-- Audio oculto que se puede reproducir (por ejemplo, al interactuar) -->
+      <audio id="mcqueenaudio" src="../audio/rayo-laser-101851.mp3"></audio>
+    </div>
+  </header>
 
-<footer>
+  <!-- Contenido principal del juego -->
+  <main class="flex-grow-1 py-5">
+    <div class="container my-5" id="quiz-container">
+      
+      <!-- Título del quiz -->
+      <h2 class="titulo text-center mb-4">¿Cuánto sabes de Cars?</h2>
+
+      <!-- Caja que muestra las preguntas y opciones -->
+      <div id="question-box">
+        <p id="question" class="fs-5"></p> <!-- Aquí se cargará la pregunta -->
+        <div id="options" class="d-grid gap-2"></div> <!-- Aquí se cargarán las opciones de respuesta -->
+      </div>
+
+      <!-- Resultado del quiz, oculto hasta que se completa -->
+      <div id="result-box" class="mt-4 d-none text-center">
+        <h3>¡Has completado el quiz!</h3>
+        <p id="score" class="fs-4"></p> <!-- Muestra el puntaje final -->
+        <button onclick="restartQuiz()" class="reinicio btn mt-3 bg-danger">Reintentar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
     <div class="footer-content">
         <p>&copy; 2025 Mariano Verdugo y Abel Blanco.</p>
     </div>
-</footer>
+  </footer>
 
-<script src="../js/cuestionariologica.js"></script>
+  <!-- Script que contiene la lógica del cuestionario -->
+  <script src="../js/cuestionariologica.js"></script>
 </body>
 </html>
