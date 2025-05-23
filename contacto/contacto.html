@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../img/cochesito.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/contacto.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <title>Contacto</title>
-    </head>
-    <body>
-    
-    <!-- Barra lateral-->
-    <header class="text-white">
-        <div class="container py-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
+</head>
+<body>
+
+<!-- Barra lateral -->
+<header class="text-white">
+    <div class="container py-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
         <img src="../img/Pixar_Cars_Logo.webp" class="logo img-fluid imagen mx-auto" />
         <button class="toggle-btn" id="toggleSidebar">☰</button>
         <div class="sidebar" id="sidebarMenu">
@@ -24,26 +24,26 @@
             <a href="../contacto/contacto.html">Contacto</a>
         </div>
         <audio id="mcqueenaudio" src="../audio/rayo-laser-101851.mp3"></audio>
-        </div>
-    </header>
+    </div>
+</header>
 
-        <div class="video-background-container">
-            <video autoplay muted loop class="video-background">
-            <source src="../video/final.mp4" type="video/mp4" />
-            Tu navegador no soporta video HTML5.
-            </video>
+<div class="video-background-container">
+    <video autoplay muted loop class="video-background">
+        <source src="../video/final.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+    </video>
 
-            <main class="video-content">
-            <div class="form-container">
+    <main class="video-content">
+        <div class="form-container">
+            <h2 class="text-center mb-4 titu">¡Contáctanos en la Ruta 66!</h2>
+            <img src="../img/tokyo-mate.png" class="img-form" alt="">
 
-                <h2 class="text-center mb-4 titu">¡Contáctanos en la Ruta 66!</h2>
-
-                <img src="../img/tokyo-mate.png" class="img-form" alt="">
-                
+            <!-- FORMULARIO -->
+            <form id="contactForm" novalidate>
                 <div class="mb-3 mx-3">
-            <label for="nombre" class="form-label text-uppercase">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required />
-            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                    <label for="nombre" class="form-label text-uppercase">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required />
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
                 </div>
 
                 <div class="mb-3 mx-3">
@@ -65,29 +65,28 @@
                 <div id="formSuccess" class="alert alert-success mt-3 d-none mx-3" role="alert">
                     ¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.
                 </div>
+            </form>
 
-                <div class="github-buttons-wrapper">
-                    <a href="https://github.com/MarianoVG2006" target="_blank" class="btn github-btn" title="Github Mariano">
-                    <i class="bi bi-github"></i>
-                    Mariano
-                    </a>
-                    <a href="https://github.com/abelbm02" target="_blank" class="btn github-btn" title="Github Abel">
-                    <i class="bi bi-github"></i>
-                    Abel
-                    </a>
-                </div>
-                </form>
+            <!-- GitHub Buttons -->
+            <div class="github-buttons-wrapper">
+                <a href="https://github.com/MarianoVG2006" target="_blank" class="btn github-btn" title="Github Mariano">
+                    <i class="bi bi-github"></i> Mariano
+                </a>
+                <a href="https://github.com/abelbm02" target="_blank" class="btn github-btn" title="Github Abel">
+                    <i class="bi bi-github"></i> Abel
+                </a>
             </div>
-            </main>
         </div>
-    
-    <!-- Pie de página con autores -->
-    <footer>
-        <div class="footer-content">
-        <p>&copy; 2025 Mariano Verdugo y Abel Blanco.</p>
-        </div>
-    </footer>
+    </main>
+</div>
 
-    <script src="../js/contacto.js"></script>
+<!-- Pie de página -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Mariano Verdugo y Abel Blanco.</p>
+    </div>
+</footer>
+
+<script src="../js/contacto.js"></script>
 </body>
 </html>
