@@ -102,7 +102,7 @@ const quizData = [
   }
   
   // Crear coches cada 500ms
-  setInterval(createFallingCar, 500);
+  setInterval(createFallingCar, 1000);
 
   // para que se vea el panel.
   document.getElementById('toggleSidebar').addEventListener('click', function() {
