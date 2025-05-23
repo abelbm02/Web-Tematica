@@ -95,14 +95,6 @@ header {
     margin-bottom:50px;
 }
 
-.zebra-light {
-  background-color: #f8f9fa; 
-}
-
-.zebra-dark {
-  background-color: grey; 
-}
-
 .hover-elevate {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -144,9 +136,9 @@ header {
 #cars1,
 #cars2,
 #cars3 {
-  height: 400px;              /* Más grande */
-  width: 400px;               /* Igual para mantener forma circular */
-  border-radius: 50%;         /* Círculo perfecto */
+  height: 400px;              
+  width: 400px;              
+  border-radius: 50%;        
   flex-shrink: 0;             
   object-fit: cover;
   object-position: center;
@@ -186,14 +178,12 @@ header {
 }
 
 .pelicula-box p {
-  font-size: 1.2rem;       /* Aumenta el tamaño de la fuente */
-  line-height: 1.6;        /* Mejora la legibilidad */
-  color: #212529;          /* Color oscuro para buen contraste */
-  font-weight: 500;        /* Un poco más grueso */
+  font-size: 1.2rem;       
+  line-height: 1.6;       
+  color: #212529;         
+  font-weight: 500;        
 }
 
-
-/* Efecto sombra y zoom a la imagen */
 .pelicula-box img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -223,7 +213,7 @@ header {
 }
 
 .curiosity-btn {
-  background-color: #dc3545; /* rojo Bootstrap */
+  background-color: #dc3545; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -240,5 +230,5 @@ header {
   transition: background-color 0.3s ease;
 }
 .curiosity-btn:hover {
-  background-color: #bd2130; /* rojo más oscuro */
+  background-color: #bd2130; 
 }
