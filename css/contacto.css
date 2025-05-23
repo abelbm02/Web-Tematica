@@ -78,7 +78,7 @@ header {
   
   .video-background {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -98,7 +98,7 @@ header {
     padding-bottom: 20vh;
     border-radius: 15px;
     width: 750px;
-    height: 600px;
+    height: 700px;
     max-width: 90%;  
     margin: 0 auto;
     text-align: center;
