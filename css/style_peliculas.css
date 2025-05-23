@@ -125,10 +125,10 @@ header {
   width: 100%;
   height: 100%;
   background-image: url('/img/rust-eze.webp');
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;   
+  background-size: 370px 300px;
   filter: blur(10px);
-  opacity: 0.6;
+  opacity: 1;
   z-index: 0;
 }
 
@@ -141,33 +141,104 @@ header {
     background-color: #dfdada;
 }
 
-.titu {
-  color: #dc3545;          
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin-bottom: 15px;   
-}
-
-#cars1{
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  flex-shrink: 0; /* evita que se encoja */
-}
-
-#cars2{
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  flex-shrink: 0; /* evita que se encoja */
-}
-
-
+#cars1,
+#cars2,
 #cars3 {
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  flex-shrink: 0; /* evita que se encoja */
+  height: 400px;              /* Más grande */
+  width: 400px;               /* Igual para mantener forma circular */
+  border-radius: 50%;         /* Círculo perfecto */
+  flex-shrink: 0;             
+  object-fit: cover;
+  object-position: center;
 }
 
+.pelicula-box {
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border: 2px solid #dc3545;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: aparecer 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pelicula-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.pelicula-box h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #c30022;
+}
+
+.pelicula-box p {
+  font-size: 1.2rem;       /* Aumenta el tamaño de la fuente */
+  line-height: 1.6;        /* Mejora la legibilidad */
+  color: #212529;          /* Color oscuro para buen contraste */
+  font-weight: 500;        /* Un poco más grueso */
+}
+
+
+/* Efecto sombra y zoom a la imagen */
+.pelicula-box img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+}
+
+.content:hover {
+  background-color: #ffc107; /* Color amarillo */
+  transform: scale(1.05);    /* Pequeño aumento de tamaño */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.trailer-box {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+
+}
+
+.trailer-box:hover {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.curiosity-btn {
+  background-color: #dc3545; /* rojo Bootstrap */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+.curiosity-btn:hover {
+  background-color: #bd2130; /* rojo más oscuro */
+}

@@ -1,9 +1,20 @@
 "use strict"
 
-document.getElementById("toggleSidebar").addEventListener("click", function () {
+// Codigo para que se muestre el menu lateral al hacer click en el boton
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const toggleButton = document.getElementById("toggleSidebar");
     const sidebar = document.getElementById("sidebarMenu");
-    sidebar.classList.toggle("show");
-  });
+
+    
+    toggleButton.addEventListener("click", function () {
+      
+        sidebar.classList.toggle("show");
+    });
+});
+
+// codigo para poner el audio al clickar en el menu
+
 
 function setupSidebarToggle() {
     const toggleButton = document.getElementById('toggleSidebar');
@@ -18,5 +29,26 @@ function setupSidebarToggle() {
     });
   }
 
- 
+
   document.addEventListener('DOMContentLoaded', setupSidebarToggle);
+
+      (() => {
+      'use strict'
+      const form = document.querySelector('#contactForm');
+      const successAlert = document.getElementById('formSuccess');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (form.checkValidity()) {
+          // Simula envío exitoso
+          successAlert.classList.remove('d-none');
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          successAlert.classList.add('d-none');
+          form.classList.add('was-validated');
+        }
+      });
+    })();
