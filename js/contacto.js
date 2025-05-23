@@ -33,7 +33,8 @@ function setupSidebarToggle() {
   document.addEventListener('DOMContentLoaded', setupSidebarToggle);
 
       (() => {
-      'use strict'
+        
+      
       const form = document.querySelector('#contactForm');
       const successAlert = document.getElementById('formSuccess');
 
