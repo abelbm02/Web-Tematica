@@ -98,7 +98,7 @@ header {
     padding-bottom: 20vh;
     border-radius: 15px;
     width: 750px;
-    height: 800px;
+    height: 600px;
     max-width: 90%;  
     margin: 0 auto;
     text-align: center;
@@ -133,7 +133,7 @@ header {
 }
 
 .github-btn {
-  background: linear-gradient(145deg, #c30022, #c30022); /* azul degradado */
+  background: linear-gradient(145deg, #c30022, #c30022);
   color: #fff;
   padding: 1.8rem 2.5rem;
   font-size: 1.5rem;
@@ -172,9 +172,9 @@ header {
 .titu {
   font-size: 32px;
   font-weight: bold;
-  color: #ffc107; /* Color llamativo */
+  color: #ffc107;
   text-align: center;
   margin: 20px 0;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra ligera para resaltar */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
   text-transform: uppercase;
 }
