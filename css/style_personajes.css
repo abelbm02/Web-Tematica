@@ -93,6 +93,12 @@ header {
   border: 5px solid white;
   animation: flotar 3s ease-in-out infinite;
   transition: transform 0.3s ease;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.personaje-img:hover {
+  transform: rotate(360deg);
 }
 
 .personaje-section {
